@@ -1,0 +1,263 @@
+:root {
+  --primary-text-color: #555555;
+  --secondary-text-color: #303030;
+  --third-text-color: #9da4bd;
+  --inversion-color: #ffffff;
+  --accent-color: #ff6c00;
+
+  --primary-title-color: #ffffff;
+  --secondary-title-color: #303030;
+}
+/* общие */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.link-none {
+  text-decoration: none;
+}
+
+.section-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.section-title-dark {
+  color: var(--secondary-text-color);
+}
+
+.section-title-light {
+  color: var(--primary-title-color);
+}
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pre-title-light {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.pre-title-dark {
+  color: var(--secondary-text-color);
+}
+
+.after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.after-title-light {
+  color: var(--third-text-color);
+}
+
+.after-title-dark {
+  color: var(--primary-text-color);
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.btn-dark {
+  color: var(--inversion-color);
+}
+
+.btn-light {
+  color: var(--secondary-text-color);
+}
+
+.btn-dark:hover,
+.btn-dark:focus {
+  color: var(--inversion-color);
+}
+/* шапка сайта*/
+.header-page,
+.hero {
+  background-color: var(--primary-text-color);
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--inversion-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--inversion-color);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+/* герой */
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  color: var(--secondary-text-color);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--primary-title-color);
+}
+
+/* о нас */
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/* цены */
+.prices {
+  background-color: var(--primary-text-color);
+}
+
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+}
+
+/* причины */
+.reasons-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--secondary-text-color);
+}
+
+.reasons-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+/* мастера */
+.masters-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--secondary-title-color);
+}
+
+.masters-item-text {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* запись */
+.online {
+  background-color: var(--primary-text-color);
+}
+
+/* контакты */
+.contacts {
+  background-color: var(--primary-text-color);
+}
+
+.contacts-address {
+  font-style: inherit;
+}
+
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+}
+
+.contacts-pre-title {
+  color: var(--primary-title-color);
+}
+
+.contacts-time {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+}
+
+/* подвал */
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
