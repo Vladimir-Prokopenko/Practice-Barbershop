@@ -50,19 +50,23 @@
         </nav>
         <div class="header-connect">
           <a href="tel:+380441111111" class="header-tel">+38 044 111 11 11</a>
-          <button type="button" class="header-button btn btn-dark">
-            онлайн-запись
-          </button>
+          <a href="#online" class="link-btn link-btn-dark"> онлайн-запись </a>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
-        <div class="container hero-container">
-          <ul class="hero-list">
-            <li><a href="#" class="hero-link">Instagram</a></li>
-            <li><a href="#" class="hero-link">Youtube</a></li>
-          </ul>
+        <div class="hero-container">
+          <div class="hero-left">
+            <ul class="hero-list">
+              <li class="hero-left-item">
+                <a class="hero-left-link" href="#">Instagram</a>
+              </li>
+              <li class="hero-left-item">
+                <a class="hero-left-link" href="#">Youtube</a>
+              </li>
+            </ul>
+          </div>
           <div lang="en" class="hero-right">
             <p class="pre-title pre-title-light hero-pre-title">
               A hair salon for men in Kyiv
@@ -121,7 +125,9 @@
               клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button type="button" class="btn btn-light">онлайн-запись</button>
+            <a href="#online" class="about-btn link-btn link-btn-light">
+              онлайн-запись
+            </a>
           </div>
         </div>
       </section>
@@ -187,29 +193,37 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="btn btn-dark prices-btn">
+          <a href="#online" class="link-btn link-btn-dark prices-link-btn">
             онлайн-запись
-          </button>
+          </a>
         </div>
       </section>
       <section class="reasons">
         <div class="container reasons-container">
           <ul class="reasons-list">
             <li class="reasons-item">
-              <span class="reasons-count">600</span>
-              <p class="reasons-item-text">Довольных клиентов в день</p>
+              <div class="reasons-item-thumb">
+                <span class="reasons-count">600</span>
+                <p class="reasons-item-text">Довольных клиентов в день</p>
+              </div>
             </li>
             <li class="reasons-item">
-              <span class="reasons-count">50</span>
-              <p class="reasons-item-text">Наград за отличный сервис</p>
+              <div class="reasons-item-thumb">
+                <span class="reasons-count">50</span>
+                <p class="reasons-item-text">Наград за отличный сервис</p>
+              </div>
             </li>
             <li class="reasons-item">
-              <span class="reasons-count">20</span>
-              <p class="reasons-item-text">Лучших мастеров Киева</p>
+              <div class="reasons-item-thumb">
+                <span class="reasons-count">20</span>
+                <p class="reasons-item-text">Лучших мастеров Киева</p>
+              </div>
             </li>
             <li class="reasons-item">
-              <span class="reasons-count">100</span>
-              <p class="reasons-item-text">Подарков постоянным клиентам</p>
+              <div class="reasons-item-thumb">
+                <span class="reasons-count">100</span>
+                <p class="reasons-item-text">Подарков постоянным клиентам</p>
+              </div>
             </li>
           </ul>
           <div class="reasons-right">
@@ -236,12 +250,34 @@
           </h2>
           <ul class="masters-list">
             <li class="masters-item">
-              <img
-                src="./img/our-masters-1.jpg"
-                alt="John Smith"
-                width="370"
-                height="346"
-              />
+              <div class="masters-item-thumb">
+                <img
+                  src="./img/our-masters-1.jpg"
+                  alt="John Smith"
+                  width="370"
+                  height="346"
+                />
+                <div class="masters-item-overlay">
+                  <p class="masters-item-overlay-text">График работы:</p>
+                  <ul class="masters-overlay-list">
+                    <li class="masters-overlay-item">
+                      Понедельник с 9:00 до 22:00<a
+                        class="masters-overlay-link"
+                        href="#online"
+                        >записатся можно по ссылке</a
+                      >
+                    </li>
+                    <li class="masters-overlay-item">
+                      Четверг с 9:00 до 22:00<a
+                        class="masters-overlay-link"
+                        href="#online"
+                        >записатся можно по ссылке</a
+                      >
+                    </li>
+                    <li class="masters-overlay-item">Воскресенье выходной</li>
+                  </ul>
+                </div>
+              </div>
               <div class="masters-item-contents">
                 <h3 class="masters-item-title">John Smith</h3>
                 <p class="masters-item-text">Extreme Barber</p>
@@ -292,12 +328,34 @@
               </div>
             </li>
             <li class="masters-item">
-              <img
-                src="./img/our-masters-2.jpg"
-                alt="Michele Doe"
-                width="370"
-                height="346"
-              />
+              <div class="masters-item-thumb">
+                <img
+                  src="./img/our-masters-2.jpg"
+                  alt="Michele Doe"
+                  width="370"
+                  height="346"
+                />
+                <div class="masters-item-overlay">
+                  <p class="masters-item-overlay-text">График работы:</p>
+                  <ul class="masters-overlay-list">
+                    <li class="masters-overlay-item">
+                      Вторник с 9:00 до 22:00<a
+                        class="masters-overlay-link"
+                        href="#online"
+                        >записатся можно по ссылке</a
+                      >
+                    </li>
+                    <li class="masters-overlay-item">
+                      Пянтица с 9:00 до 22:00<a
+                        class="masters-overlay-link"
+                        href="#online"
+                        >записатся можно по ссылке</a
+                      >
+                    </li>
+                    <li class="masters-overlay-item">Воскресенье выходной</li>
+                  </ul>
+                </div>
+              </div>
               <div class="masters-item-contents">
                 <h3 class="masters-item-title">Michele Doe</h3>
                 <p class="masters-item-text">Extreme Barber</p>
@@ -347,12 +405,34 @@
               </div>
             </li>
             <li class="masters-item">
-              <img
-                src="./img/our-masters-3.jpg"
-                alt="Alan Black"
-                width="370"
-                height="346"
-              />
+              <div class="masters-item-thumb">
+                <img
+                  src="./img/our-masters-3.jpg"
+                  alt="Alan Black"
+                  width="370"
+                  height="346"
+                />
+                <div class="masters-item-overlay">
+                  <p class="masters-item-overlay-text">График работы:</p>
+                  <ul class="masters-overlay-list">
+                    <li class="masters-overlay-item">
+                      Среда с 9:00 до 22:00<a
+                        class="masters-overlay-link"
+                        href="#online"
+                        >записатся можно по ссылке</a
+                      >
+                    </li>
+                    <li class="masters-overlay-item">
+                      Суббота с 9:00 до 22:00<a
+                        class="masters-overlay-link"
+                        href="#online"
+                        >записатся можно по ссылке</a
+                      >
+                    </li>
+                    <li class="masters-overlay-item">Воскресенье выходной</li>
+                  </ul>
+                </div>
+              </div>
               <div class="masters-item-contents">
                 <h3 class="masters-item-title">Alan Black</h3>
                 <p class="masters-item-text">Extreme Barber</p>
@@ -412,44 +492,79 @@
           <h2 class="visually-hidden">Галерея</h2>
           <ul class="gallery-list">
             <li class="gallery-item">
-              <img
-                src="./img/gallery-foto-1.jpg"
-                alt="gallery-foto-1"
-                width="270"
-                height="360"
-              />
+              <div class="gallery-item-wrap">
+                <div class="gallery-item-img">
+                  <img
+                    src="./img/gallery-foto-1.jpg"
+                    alt="gallery-foto-1"
+                    width="270"
+                    height="360"
+                  />
+                </div>
+                <div class="gallery-item-back">
+                  <p>Мужская стрижка от 300 грн.</p>
+                </div>
+              </div>
             </li>
             <li class="gallery-item">
-              <img
-                src="./img/gallery-foto-2.jpg"
-                alt="gallery-foto-2"
-                width="270"
-                height="360"
-              />
+              <div class="gallery-item-wrap">
+                <div class="gallery-item-img">
+                  <img
+                    src="./img/gallery-foto-2.jpg"
+                    alt="gallery-foto-2"
+                    width="270"
+                    height="360"
+                  />
+                </div>
+                <div class="gallery-item-back">
+                  <p>Стрижка бороды от 200 грн.</p>
+                </div>
+              </div>
             </li>
             <li class="gallery-item">
-              <img
-                src="./img/gallery-foto-3.jpg"
-                alt="gallery-foto-3"
-                width="270"
-                height="360"
-              />
+              <div class="gallery-item-wrap">
+                <div class="gallery-item-img">
+                  <img
+                    src="./img/gallery-foto-3.jpg"
+                    alt="gallery-foto-3"
+                    width="270"
+                    height="360"
+                  />
+                </div>
+                <div class="gallery-item-back">
+                  <p>Стрижка усов от 200 грн.</p>
+                </div>
+              </div>
             </li>
             <li class="gallery-item">
-              <img
-                src="./img/gallery-foto-4.jpg"
-                alt="gallery-foto-4"
-                width="270"
-                height="360"
-              />
+              <div class="gallery-item-wrap">
+                <div class="gallery-item-img">
+                  <img
+                    src="./img/gallery-foto-4.jpg"
+                    alt="gallery-foto-4"
+                    width="270"
+                    height="360"
+                  />
+                </div>
+                <div class="gallery-item-back">
+                  <p>Бритье опасной бритвой от 200 грн.</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <div class="contact-wrap">
         <div class="container">
-          <section class="online">
+          <section class="online" id="online">
             <h2 class="section-title section-title-light">Онлайн-запись</h2>
+            <button
+              type="button"
+              class="link-btn link-btn-dark online-link-btn"
+              data-modal-open
+            >
+              онлайн-запись
+            </button>
           </section>
           <section class="contacts" id="contacts">
             <h2
@@ -499,5 +614,24 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop-online is-hidden" data-modal>
+      <div class="modal-online">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis
+          debitis quibusdam doloremque perspiciatis distinctio consequuntur
+          nobis ipsa dolore earum quisquam qui eveniet maxime ad, numquam libero
+          quos, veritatis accusantium similique tempora nemo? Quo consequuntur
+          iusto eius aut facilis doloribus aliquam quae vitae dolor
+          voluptatibus? Accusamus corrupti cumque odio illo.
+        </p>
+        <button class="modal-online-button" type="button" data-modal-close>
+          <svg class="modal-online-close">
+            <use href="./img/svg-sprite-barber-mini.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
