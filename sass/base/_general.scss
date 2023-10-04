@@ -1,0 +1,106 @@
+.section-title {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 1.17;
+	letter-spacing: 0.05em;
+}
+
+.section-title-dark {
+	color: var(--secondary-text-color);
+}
+
+.section-title-light {
+	color: var(--primary-title-color);
+}
+
+.pre-title {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.pre-title::before {
+	content: "";
+	width: 60px;
+	height: 1px;
+	margin-right: 20px;
+}
+
+.pre-title-light {
+	color: rgba(157, 164, 189, 0.6);
+}
+
+.pre-title-light::before {
+	background: rgba(157, 164, 189, 0.6);
+}
+
+.pre-title-dark {
+	color: var(--secondary-text-color);
+}
+
+.pre-title-dark::before {
+	background: #303030;
+}
+
+.after-title {
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+}
+
+.after-title-light {
+	color: var(--third-text-color);
+}
+
+.after-title-dark {
+	color: var(--primary-text-color);
+}
+
+.link-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	height: 40px;
+	font-family: inherit;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+}
+
+.link-btn-dark {
+	transform: scale(1);
+	color: var(--inversion-color);
+	transition: color var(--time-duration) var(--timing-function),
+		background-color var(--time-duration) var(--timing-function), transform var(--time-duration) var(--timing-function);
+}
+
+.link-btn-light {
+	transform: scale(1);
+	color: var(--secondary-text-color);
+	transition: color var(--time-duration) var(--timing-function),
+		background-color var(--time-duration) var(--timing-function), transform var(--time-duration) var(--timing-function);
+}
+
+.link-btn-dark:hover,
+.link-btn-dark:focus,
+.link-btn-light:hover,
+.link-btn-light:focus {
+	transform: scale(1.2);
+	color: var(--inversion-color);
+	background-color: var(--accent-color);
+	box-shadow: 0px 0px 5px 1px #ff6c00;
+}
+
+.link-text--left {
+	text-align: right;
+}

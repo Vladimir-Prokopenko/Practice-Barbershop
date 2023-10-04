@@ -1,0 +1,107 @@
+/* запись */
+.online {
+	padding-top: 84px;
+	padding-bottom: 84px;
+
+	@media screen and (min-width: 768px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+}
+
+.contact-wrap > .container {
+	@media screen and (min-width: 1280px) {
+		max-width: calc(50%);
+	}
+}
+
+.section-title-online {
+	margin-bottom: 44px;
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
+}
+
+.online-form {
+	margin-bottom: 44px;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.input-item {
+	margin-bottom: 44px;
+	padding-bottom: 8px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.364;
+	letter-spacing: 0.1em;
+	color: var(--inversion-color);
+	border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+	background-color: transparent;
+}
+
+.input-item::placeholder {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.364;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: rgba(157, 164, 189, 0.4);
+}
+
+.input-item:hover,
+.input-item:focus {
+	border-color: var(--inversion-color);
+}
+
+.input-item:hover::placeholder {
+	color: var(--inversion-color);
+}
+
+.input-name {
+	margin-right: 30px;
+	width: 100%;
+	height: 24px;
+
+	@media screen and (min-width: 768px) {
+		width: calc(50% - 15px);
+	}
+}
+
+.input-tel {
+	width: 100%;
+	height: 24px;
+
+	@media screen and (min-width: 768px) {
+		width: calc(50% - 15px);
+	}
+}
+
+.input-massage {
+	width: 100%;
+	height: 76px;
+	resize: none;
+}
+
+.online-link-btn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media screen and (min-width: 768px) {
+		margin-left: 0;
+	}
+}

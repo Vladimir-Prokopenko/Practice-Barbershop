@@ -1,0 +1,169 @@
+/* мастера */
+.masters {
+	padding-top: 84px;
+	padding-bottom: 84px;
+	background: #f7f7f7;
+
+	@media screen and (min-width: 768px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+
+		@media screen and (min-width: 1280px) {
+			padding-top: 130px;
+			padding-bottom: 130px;
+		}
+	}
+}
+
+.masters .container {
+	margin-left: auto;
+	margin-right: auto;
+
+	@media screen and (min-width: 768px) and (max-width: 1279px) {
+		padding-left: 159px;
+		padding-right: 159px;
+	}
+}
+.masters-pre-title {
+	padding-bottom: 20px;
+}
+
+.masters-title {
+	padding-bottom: 44px;
+}
+
+.masters-list {
+	@media screen and (min-width: 1280px) {
+		display: flex;
+		gap: 30px;
+	}
+}
+
+.masters-item {
+	width: 100%;
+	@media screen and (min-width: 1280px) {
+		max-width: calc((100% - 60px) / 3);
+	}
+}
+
+.masters-item:not(:last-child) {
+	@media screen and (max-width: 1279px) {
+		margin-bottom: 64px;
+	}
+}
+
+.masters-item-thumb {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.masters-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.masters-item-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 40px;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	text-align: center;
+	background-color: rgba(9, 11, 19, 0.8);
+	color: var(--third-text-color);
+	transform: translateY(100%);
+	transition: transform var(--time-duration) var(--timing-function);
+	overflow: auto;
+}
+
+.masters-item-thumb:hover .masters-item-overlay {
+	transform: translateY(0%);
+}
+
+.masters-overlay-item {
+	margin-top: 20px;
+}
+
+.masters-item-overlay-text {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 49px;
+	letter-spacing: 0.05em;
+	color: var(--primary-title-color);
+}
+
+.masters-overlay-link {
+	margin-top: 10px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	color: var(--inversion-color);
+	transform: scale(1);
+	transition: color var(--time-duration) var(--timing-function), transform var(--time-duration) var(--timing-function);
+}
+
+.masters-overlay-link:hover,
+.masters-overlay-link:focus {
+	color: var(--accent-color);
+	transform: scale(1.2);
+}
+
+.masters-item-contents {
+	padding-top: 30px;
+}
+
+.masters-item-title {
+	margin-bottom: 8px;
+	font-size: 18px;
+	line-height: 1.39;
+	letter-spacing: 0.02em;
+	text-align: center;
+	color: var(--secondary-title-color);
+}
+
+.masters-item-text {
+	margin-bottom: 30px;
+	font-size: 14px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.02em;
+	color: var(--accent-color);
+}
+
+.masters-social {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.masters-social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	color: var(--secondary-title-color);
+	transition: color var(--time-duration) var(--timing-function), transform var(--time-duration) var(--timing-function);
+}
+
+.masters-social-link:hover,
+.masters-social-link:focus {
+	color: #ff6c00;
+	transform: scale(1.5);
+}
+
+.social-icon-svg {
+	width: 20px;
+	height: 20px;
+}

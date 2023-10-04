@@ -1,0 +1,64 @@
+/* backdrop */
+.backdrop-online {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(25, 28, 38, 0.9);
+	opacity: 1;
+	transition: opacity 500ms var(--timing-function), visibility 500ms var(--timing-function);
+	overflow: auto;
+}
+
+.backdrop-online.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.modal-online {
+	position: absolute;
+	font-family: "Roboto", sans-serif;
+	width: 100%;
+	max-width: 640px;
+	padding: 40px;
+	background-color: var(--inversion-color);
+	border-radius: 5px;
+	top: 50%;
+	left: 50%;
+	background-color: #5e5f63;
+	transform: translate(-50%, -50%) scale(1);
+	transition: transform 500ms var(--timing-function);
+}
+
+.backdrop-online.is-hidden .modal-online {
+	transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-online-button {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	color: var(--inversion-color);
+	border: 1px solid var(--inversion-color);
+	transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+}
+
+.modal-online-close {
+	width: 16px;
+	height: 16px;
+	fill: currentColor;
+}
+
+.modal-online-button:hover,
+.modal-online-button:focus {
+	color: var(--accent-color);
+	border-color: var(--accent-color);
+}

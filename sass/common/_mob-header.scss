@@ -1,0 +1,31 @@
+.mob-header {
+	position: absolute;
+	width: 100%;
+	padding-top: 40px;
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.mob-header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mob-logo__icon {
+	display: block;
+	width: 70px;
+	height: 55px;
+}
+
+.mob-button__icon {
+	width: 40px;
+	height: 40px;
+}
+
+.mob-button {
+	width: 40px;
+	height: 40px;
+}
